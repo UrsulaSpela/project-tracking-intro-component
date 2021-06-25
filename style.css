@@ -13,7 +13,7 @@ body {
 #main {
   width: 1440px;
   height: 800px;
-  padding: 60px 160px 120px 160px;
+  padding: 60px 0px 120px 160px;
   overflow: hidden;
 }
 /*----- HEADER -----*/
@@ -26,12 +26,18 @@ header {
 nav {
   display: flex;
   align-items: center;
+  padding-right: 160px;
+  z-index: 10;
 }
 a {
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
-  font-size: 700;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+a:hover {
+  text-decoration: underline;
 }
 .blue {
   color: hsl(230, 29%, 20%);
@@ -107,4 +113,14 @@ button {
 }
 button:hover {
   opacity: 0.6;
+}
+#right {
+  background: hsl(207, 33%, 95%);
+  border-radius: 0 0 0 50px;
+  position: relative;
+  top: -270px;
+}
+#right img {
+  position: relative;
+  top: 270px;
 }
