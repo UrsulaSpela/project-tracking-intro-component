@@ -16,6 +16,9 @@ body {
   padding: 60px 0px 120px 160px;
   overflow: hidden;
 }
+.mobile {
+  display: none;
+}
 /*----- HEADER -----*/
 header {
   display: flex;
@@ -129,9 +132,29 @@ button:hover {
   #main {
     width: 375px;
     padding: 40px 25px;
+    position: relative;
+  }
+  .mobile {
+    display: block;
+    width: 30px;
+    height: 30px;
+    z-index: 14;
   }
   nav {
+    position: absolute;
+    top: 100px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 310px;
+    height: 235px;
+    padding: 0;
     display: none;
+  }
+  .blue,
+  .gray {
+    margin: 10px 0;
   }
   #content {
     flex-direction: column-reverse;
